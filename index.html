@@ -2,41 +2,49 @@
 <html>
 <head>
 	<title></title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 	<style type="text/css">
-		
-		.header{
-			background: blue;
-            background: linear-gradient(135deg, transparent 15px, blue 0) top left,
-            linear-gradient(-45deg, transparent 15px, blue 0) bottom right;
-            background-size: 51% 100%;
-            background-repeat: no-repeat;
-            position: fixed;
-            top: 0px;
-            left: 0px;
+		.box2{
+			height: 600px;
+			width: 1200px;
+			background-color: blue;
+			display: flex;
 		}
-		.gInfo{
-			margin-top: 60px;
+		.box3{
+			height: 475px;
+			width: 550px;
+			background-color: orange;
 		}
-		.box1 {
-            width: 100px;
-            height: 100px;
-            background: red;
-            position: absolute;
-            top: 10000px;
-        }
-        .mine-image{
-        	
-        }
-
+		.box{
+			width: 1200px;
+			height: 100px;
+			background-color: gray;
+		}
+		.text{
+			margin-left: 800px;
+			margin-top: -70px;
+			font-size: 39px;
+		}
+		.text1{
+			margin-left: 1050px;
+			margin-top: -70px;
+			font-size: 39px;
+		}
+		.text2{
+			margin-left: 100px;
+			padding-top: 20px;
+			font-size: 39px;
+		}
 	</style>
-
 </head>
 <body>
-	<div class="header col-12" style="height: 60px;">
-		
-	</div>
+  <div class="box mx-auto border" style="background-color: gray;">
+  	<h1 class="text2">Вставить тескт</h1>
+  	<a href=""><h1 class="text">Registration</h1></a>
+  	<a href=""><h1 class="text1">Login</h1></a>
+  </div>
+  <div class="box2 mx-auto border">
+  		<div class="box3 border" style="margin-left: 25px; margin-top: 50px;"></div>
+  		<div class="box3 border" style="margin-left: 25px; margin-top: 50px;"></div>
+  </div>
 </body>
 </html>
