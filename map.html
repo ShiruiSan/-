@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		.map {
+			height: 350px;
+			background-image: url(map.png);
+			background-size: 100% 100%;
+		}
+		.people1 {
+			width: 44px;
+			position: absolute;
+			top: 220px;
+			left: 399px;
+		}
+		.people2 {
+			width: 44px;
+			position: absolute;
+			top: 120px;
+			left: 499px;
+		}
+		.card1 {
+			width: 300px;
+			position: absolute;
+			left: 850px;
+			top: 100px;
+			display: none;
+		}
+		.money1 {
+			width: 300px;
+			position: absolute;
+			left: 850px;
+			top: 100px;
+			display: none;
+		}
+		.btnscs1 {
+			position: absolute;
+			top: 520px;
+			left: 1000px;
+			display: none;
+		}
+		.btnmoney1 {
+			position: absolute;
+			top: 520px;
+			left: 1000px;
+			display: none;
+		}
+	</style>
+</head>
+<body style="background: #b8bab9">
+	<div class="col-7 ml-auto map" style="height: 500px; position: absolute; top: 75px;">
+		<img src="blueplayer.png" style="" class="people1">
+		<img src="orangeplayer.png" style="" class="people2">
+	</div>
+	<img src="card1.png" class="card1">
+	<img src="money1.png" class="money1">
+	<button class="btn bg-success btnscs1">Принять</button>
+	<button class="btn bg-success btnmoney1">Okey</button>
+	<div class="col-12 row ml-0 mr-0 pl-0 pt-0" style="height: 70px; position: fixed; background: #9fa1a1; top: 0px">
+		<div class="bg-white rounded-circle" style="width: 70px; height: 70px; position: inherit;">
+			<img src="znak_med.png" style="width: 25px; position: inherit; top: 8px; left: 23px;">
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		let player1 = document.querySelector(".people1");
+		let player2 = document.querySelector(".people2");
+		let card1 = document.querySelector(".card1");
+		let btnscs1 = document.querySelector(".btnscs1");
+		let btnmoney1 = document.querySelector(".btnmoney1");
+		let money1 = document.querySelector(".money1");
+
+		player1.onclick = function() {
+			card1.style.display = 'block';
+			btnscs1.style.display = 'block';
+		}
+		btnscs1.onclick = function() {
+			card1.style.display = 'none';
+			money1.style.display = 'block';
+			btnmoney1.style.display = 'block';
+			btnscs1.style.display = 'none';
+		}
+		btnmoney1.onclick = function() {
+			money1.style.display = 'none';
+			btnmoney1.style.display = 'none';
+		}
+
+		
+	</script>
+</body>
+</html>
